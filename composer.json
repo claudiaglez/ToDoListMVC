@@ -1,0 +1,17 @@
+{
+    "name": "usuario/to-do-list-mvc",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Claudia González",
+            "email": "claudia.glezg@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Database\\": "database/",
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
