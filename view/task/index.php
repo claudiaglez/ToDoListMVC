@@ -1,8 +1,6 @@
 <?php
 
-use Controllers\ToDoController;
-
-require_once("./controllers/ToDoController.php");
+require_once("/xampp/htdocs/FemCoders/ToDoListMVC/controllers/ToDoController.php");
 require_once("/xampp/htdocs/FemCoders/ToDoListMVC/view/head/head.php");
 $object = new ToDoController();
 $rows = $object ->index();
@@ -30,8 +28,8 @@ $rows = $object ->index();
             <?php foreach($rows as $row): ?>
                 <tr>
                     <th><?=$row["id"] ?></th>
-                    <th><?=$row["Title"] ?></th>
-                    <th><?=$row["Description"] ?></th>
+                    <th><?=$row["title"] ?></th>
+                    <th><?=$row["description"] ?></th>
                     <th>
                         <a href="./show.php?id=<?= $row["id"]?>" class="btn btn-primary">Ver</a>
                         <a href="./edit.php?id=<?= $row["id"]?>" class="btn btn-success">Editar</a>
