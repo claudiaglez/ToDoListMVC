@@ -1,8 +1,7 @@
 <?php
 
-use Controllers\ToDoController;
-
-require_once("./controllers/ToDoController.php");
+require_once("/xampp/htdocs/FemCoders/ToDoListMVC/controllers/ToDoController.php");
+require_once("/xampp/htdocs/FemCoders/ToDoListMVC/view/head/head.php");
 
 $object = new ToDoController();
 $date = $object->show($_GET['id']);
@@ -51,8 +50,12 @@ $date = $object->show($_GET['id']);
     <tbody>
         <tr>
             <td scope="col"><?= $date["id"] ?></td>
-            <td scope="col"><?= $date["Title"] ?></td>
-            <td scope="col"><?= $date["Description"] ?></td>
+            <td scope="col"><?= $date["title"] ?></td>
+            <td scope="col"><?= $date["description"] ?></td>
         </tr>
     </tbody>
 </table>
+
+<?php
+    require_once("/xampp/htdocs/FemCoders/ToDoListMVC/view/head/footer.php");
+?>

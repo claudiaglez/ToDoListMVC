@@ -12,7 +12,7 @@ class ToDoModel{
     }
 
     public function insert($Title, $Description){
-        $statement = $this->PDO->prepare(("INSERT INTO task (Title, Description) VALUES (:Title, :Description"));
+        $statement = $this->PDO->prepare("INSERT INTO task (title, description) VALUES (:Title, :Description)");
         $statement->bindParam(":Title", $Title);
         $statement->bindParam(":Description", $Description);
 
@@ -33,10 +33,10 @@ class ToDoModel{
     }
 
     public function update($id, $Title, $Description){
-        $statement = $this->PDO->prepare(("INSERT INTO task (Title, Description) VALUES (:Title, :Description"));
+        $statement = $this->PDO->prepare("UPDATE task SET title = :title, description = :description WHERE id = :id");
         $statement->bindParam(":id", $id);
-        $statement->bindParam(":Title", $Title);
-        $statement->bindParam(":Description", $Description);
+        $statement->bindParam(":title", $Title);
+        $statement->bindParam(":description", $Description);
 
         return ($statement->execute()) ? $id : false;
     }

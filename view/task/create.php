@@ -1,5 +1,5 @@
 <?php
-    require_once("./view/head/head.php");
+    require_once("/xampp/htdocs/FemCoders/ToDoListMVC/view/head/head.php");
 ?>
 <form action="store.php" method="POST" autocomplete="off">
 <div class="mb-3">
@@ -20,5 +20,5 @@
     </div>
 
     <?php
-    require_once("./view/head/footer.php");
+    require_once("/xampp/htdocs/FemCoders/ToDoListMVC/view/head/footer.php");
 ?>

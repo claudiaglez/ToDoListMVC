@@ -1,11 +1,12 @@
 <?php
 
-use Controllers\ToDoController;
 
-require_once("./controllers/ToDoController.php");
+
+require_once("/xampp/htdocs/FemCoders/ToDoListMVC/controllers/ToDoController.php");
+require "/xampp/htdocs/FemCoders/ToDoListMVC/vendor/autoload.php";
 
 $object = new ToDoController();
-$object->save($_POST['Title'], $_POST['Description']);
+$object->store($_POST['Title'], $_POST['Description']);
 
 
 ?>

@@ -1,9 +1,8 @@
 <?php
 use config\Database;
-use Exception;
 
-require "vendor/autoload.php";
-require_once("../model/ToDoModel.php");
+require "/xampp/htdocs/FemCoders/ToDoListMVC/vendor/autoload.php";
+require_once("/xampp/htdocs/FemCoders/ToDoListMVC/model/ToDoModel.php");
 
 class ToDoController{
     private $model;

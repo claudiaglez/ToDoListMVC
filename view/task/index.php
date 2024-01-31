@@ -3,6 +3,7 @@
 use Controllers\ToDoController;
 
 require_once("./controllers/ToDoController.php");
+require_once("/xampp/htdocs/FemCoders/ToDoListMVC/view/head/head.php");
 $object = new ToDoController();
 $rows = $object ->index();
 
@@ -63,3 +64,7 @@ $rows = $object ->index();
         <?php endif; ?>
     </tbody>
 </table>
+
+<?php
+    require_once("/xampp/htdocs/FemCoders/ToDoListMVC/view/head/footer.php");
+?>

@@ -1,7 +1,7 @@
 <?php
-use Controllers\ToDoController;
-require_once("./view/head/head.php");
-require_once("./controllers/ToDoController.php");
+
+require_once("/xampp/htdocs/FemCoders/ToDoListMVC/view/head/head.php");
+require_once("/xampp/htdocs/FemCoders/ToDoListMVC/controllers/ToDoController.php");
 
 $object = new ToDoController();
 $date = $object->show($_GET['id']);
@@ -20,13 +20,13 @@ $date = $object->show($_GET['id']);
   <div class="mb-3 row">
     <label for="inputPassword" class="col-sm-2 col-form-label">Tarea</label>
     <div class="col-sm-10">
-      <input type="text" name="Title" class="form-control" id="inputPassword" value="<?= $date["Title"]?>">
+      <input type="text" name="Title" class="form-control" id="inputPassword" value="<?= $date["title"]?>">
     </div>
   </div>
   <div class="mb-3 row">
     <label for="inputPassword" class="col-sm-2 col-form-label">Descripción</label>
     <div class="col-sm-10">
-      <input type="text" name="Description" class="form-control" id="inputPassword" value="<?= $date["Description"]?>">
+      <input type="text" name="Description" class="form-control" id="inputPassword" value="<?= $date["description"]?>">
     </div>
   </div>
     <input type="submit" value="Actualizar" class="btn btn-success">
@@ -35,5 +35,5 @@ $date = $object->show($_GET['id']);
 </form>
 
 <?php
-require_once("./view/head/footer.php");
+    require_once("/xampp/htdocs/FemCoders/ToDoListMVC/view/head/footer.php");
 ?>
