@@ -1,5 +1,4 @@
 <?php
-namespace Controllers;
 use config\Database;
 use Exception;
 
