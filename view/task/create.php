@@ -9,9 +9,12 @@
         <label for="Description" class="form-label">Descripción</label>
         <input type="text" name="Description" required class="form-control" id="Description" aria-describedby="emailHelp">
 
+        <div class="mt-3">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a class="btn btn-danger" href="index.php">Cancelar</a>     
+        </div>
     
-    <button type="submit" class="btn btn-primary">Guardar</button>
-    <a class="btn btn-danger" href="index.php">Cancelar</a>      
+       
         
     </div>
 
