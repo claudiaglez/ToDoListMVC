@@ -9,10 +9,6 @@
         <label for="Description" class="form-label">Descripción</label>
         <input type="text" name="Description" required class="form-control" id="Description" aria-describedby="emailHelp">
 
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="Completed" id="Completed" aria-describedby="emailHelp">
-            <label class="form-check-label" for="Completed">Completada</label>
-        </div>
     
     <button type="submit" class="btn btn-primary">Guardar</button>
     <a class="btn btn-danger" href="index.php">Cancelar</a>      

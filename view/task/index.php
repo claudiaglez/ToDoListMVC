@@ -9,7 +9,7 @@ $rows = $object ->index();
 
 
 <div class="mb-3">
-    <a href="/view/task/create.php" class="btn btn-primary">Agregar nueva tarea</a>
+    <a href="/xampp/htdocs/FemCoders/ToDoListMVC/view/task/create.php" class="btn btn-primary">Agregar nueva tarea</a>
 </div>
 
 <table class="table table-light table-striped-columns">
