@@ -2,7 +2,7 @@
     require_once("/xampp/htdocs/FemCoders/ToDoListMVC/view/head/head.php");
 ?>
 <form action="store.php" method="POST" autocomplete="off">
-<div class="mb-3">
+<div class="mb-3 w-50 d-flex flex-column justify-content-center">
         <label for="Title" class="form-label">Nueva tarea</label>
         <input type="text" name="Title" required class="form-control" id="Title" aria-describedby="emailHelp">
 
