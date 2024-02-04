@@ -11,7 +11,7 @@ $date = $object->show($_GET['id']);
 
 
 
-<h2 class="text-center">DETALLES DE LA TAREA REGISTRADA</h2>
+<h2 class="text-center">Cambios en la tarea</h2>
 <div class="pb-3">
 
     <a href="./index.php" class="btn btn-primary">Lista de tareas</a>
