@@ -21,6 +21,7 @@ $rows = $object ->index();
             <th scope="col">ID</th>
             <th scope="col">TAREA</th>
             <th scope="col">DESCRIPCIÓN</th>
+            <th scope="col">OPCIONES</th>
         </tr>
     </thead>
     <tbody>
