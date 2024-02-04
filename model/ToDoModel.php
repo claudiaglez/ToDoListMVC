@@ -44,6 +44,7 @@ class ToDoModel{
     public function delete($id){
         $statement = $this->PDO->prepare("DELETE FROM task WHERE id = :id");
         $statement->bindParam(":id",$id);
+        
         return ( $statement->execute()) ? true : false;
         }
 

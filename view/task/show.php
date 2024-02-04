@@ -4,7 +4,7 @@ require_once("/xampp/htdocs/FemCoders/ToDoListMVC/controllers/ToDoController.php
 require_once("/xampp/htdocs/FemCoders/ToDoListMVC/view/head/head.php");
 
 $object = new ToDoController();
-$date = $object->show($_GET['id']);
+$detail = $object->show($_GET['id']);
 
 ?>
 
@@ -16,7 +16,7 @@ $date = $object->show($_GET['id']);
 
     <a href="./index.php" class="btn btn-primary">Lista de tareas</a>
 
-    <a href="edit.php?id=<?= $date["id"]?>" class="btn btn-success">Editar</a>
+    <a href="edit.php?id=<?= $detail["id"]?>" class="btn btn-success">Editar</a>
 
     <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar</a>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -32,7 +32,7 @@ $date = $object->show($_GET['id']);
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
-                    <a href="delete.php?id=<?= $date["id"]?>" class="btn btn-danger">Eliminar</a>
+                    <a href="delete.php?id=<?= $detail["id"]?>" class="btn btn-danger">Eliminar</a>
                 </div>
             </div>
         </div>
@@ -50,9 +50,9 @@ $date = $object->show($_GET['id']);
     </thead>
     <tbody>
         <tr>
-            <td scope="col"><?= $date["id"] ?></td>
-            <td scope="col"><?= $date["title"] ?></td>
-            <td scope="col"><?= $date["description"] ?></td>
+            <td scope="col"><?= $detail["id"] ?></td>
+            <td scope="col"><?= $detail["title"] ?></td>
+            <td scope="col"><?= $detail["description"] ?></td>
         </tr>
     </tbody>
 </table>
