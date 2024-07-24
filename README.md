@@ -32,7 +32,7 @@ http://localhost:8000
 ```
 
 * Add your tasks :pencil2:
-* 
+
 
 ## :open_hands: Contributions
 
